@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Fitness Coach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+
+    <h1>AI Smart Fitness Dashboard</h1>
+
+    <div class="input-section">
+        <div class="input-card">
+            <h3>Workout Details</h3>
+            <input type="number" id="duration" placeholder="Workout Duration (minutes)">
+            <input type="number" id="intensity" placeholder="Intensity (1-10)">
+        </div>
+
+        <div class="input-card">
+            <h3>Recovery Details</h3>
+            <input type="number" id="sleep" placeholder="Sleep Hours">
+            <input type="number" id="energy" placeholder="Energy Level (1-10)">
+            <input type="number" id="soreness" placeholder="Soreness Level (1-10)">
+        </div>
+    </div>
+
+    <button class="calculate-btn" onclick="calculate()">Analyze Risk</button>
+
+    <div id="resultSection" class="results-section" style="display:none;">
+        <div class="result-box">
+            <h2 id="riskLevel"></h2>
+            <p>Training Load: <span id="rTraining"></span></p>
+            <p>Recovery Score: <span id="rRecovery"></span></p>
+            <p>Fatigue Score: <span id="rFatigue"></span></p>
+        </div>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

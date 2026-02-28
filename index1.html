@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Fitness Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1><b>PRIMEFORM AI : AI Fitness Dashboard</b></h1>
+
+        <button id="loginBtn" style="text-align: center;">Login</button>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+
+        <div id="dashboard" style="display:none;">
+            <h2>Your Metrics</h2>
+            <p><strong>Training Load:</strong> <span id="trainingLoad"></span></p>
+            <p><strong>Recovery Score:</strong> <span id="recoveryScore"></span></p>
+            <p><strong>Fatigue Score:</strong> <span id="fatigueScore"></span></p>
+            <button id="refreshBtn">Refresh Dashboard</button>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
