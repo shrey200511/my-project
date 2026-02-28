@@ -2,7 +2,7 @@ const apiBase = "https://utozs506eb.execute-api.eu-north-1.amazonaws.com/prod";
 const token = localStorage.getItem("access_token");
 
 if (!token) {
-    window.location.href = "index1.html";
+    window.location.href = "index.html";
 }
 
 async function calculate() {
@@ -61,5 +61,5 @@ function displayResult(data) {
 
 function logout() {
     localStorage.clear();
-    window.location.href = "index1.html";
+    window.location.href = "index.html";
 }
