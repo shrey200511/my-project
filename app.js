@@ -1,6 +1,6 @@
 const cognitoDomain = "https://eu-north-1araft1c6d.auth.eu-north-1.amazoncognito.com";
 const clientId = "1g1g1e8mu28rmp7j4vb9jpiasp";
-const redirectUri = "http://localhost:5500/index1.html";
+const redirectUri = "https://shrey200511.github.io/my-project/index.html";
 
 document.addEventListener("DOMContentLoaded", function () {
 
